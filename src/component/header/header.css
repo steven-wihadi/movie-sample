@@ -1,0 +1,9 @@
+.header-wrapper {
+	background-color: #121212;
+	padding: 12px 74px;
+}
+.header-wrapper h1 {
+	margin: 0px;
+	text-align: left;
+	color: white;
+}

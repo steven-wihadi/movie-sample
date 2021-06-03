@@ -1,0 +1,35 @@
+.now-playing-movie-wrapper {
+	display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 80px;
+  height: calc(100vh - 146.4px);
+  overflow: auto;
+}
+
+.now-playing-movie-wrapper
+.movie-card {
+	display: block;
+  width: 17%;
+  margin-bottom: 36px;
+}
+
+.movie-card .poster img {
+  width: 168px;
+  border-radius: 8px;
+}
+
+.movie-card
+.movie-title {
+	display: block;
+	color: white;
+	font-weight: bold;
+	font-size: 16px;
+  word-wrap: break-word;
+}
+
+.movie-card
+.release-date {
+	color: white;
+	font-size: 12px;
+}
