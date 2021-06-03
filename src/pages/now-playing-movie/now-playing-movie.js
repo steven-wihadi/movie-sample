@@ -29,6 +29,7 @@ export function NowPlayingMovie() {
 
   useEffect(() => {
     if (nowPlayingMovieList.length == 0) {
+      page = 1;
       fetchList();
     }
   }, []);
@@ -36,13 +37,13 @@ export function NowPlayingMovie() {
   return <div className="now-playing-movie-wrapper" onScroll={onScroll}>
     { nowPlayingMovieList &&
       nowPlayingMovieList.map((movie) => 
-        <div className="movie-card" key={ movie.id }>
+        <a className="movie-card" target='_blank' href={ '/similar/' + movie.id } key={ movie.id }>
           <div className="poster">
             <img src={ 'https://image.tmdb.org/t/p/w500' + movie.poster_path }/>
           </div>
           <span className="movie-title">{ movie.title }</span>
           <span className="release-date">{ movie.release_date }</span>
-        </div>
+        </a>
       )
     }
   </div>
