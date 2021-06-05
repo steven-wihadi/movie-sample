@@ -12,6 +12,7 @@
 	display: block;
   width: 17%;
   margin-bottom: 36px;
+  text-decoration: none;
 }
 
 .movie-card .poster img {
